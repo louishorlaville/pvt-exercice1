@@ -1,9 +1,14 @@
 import './Appli.scss';
+import Header from './components/header'
+import ListeRepertoires from './components/liste-repertoires'
 
 export default function Appli() {
   return (
     <div className="Appli">
-        Gabarit de base d'une Application React
+        <Header/>
+        <div id="contenuPage">
+          <ListeRepertoires/>
+        </div>
     </div>
   );
 }
